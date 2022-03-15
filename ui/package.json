@@ -7,8 +7,11 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.19.2",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-loadable": "^5.5.0",
+    "react-router-dom": "6",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
@@ -22,7 +25,8 @@
     "extends": [
       "react-app",
       "react-app/jest",
-      "airbnb-base",
+      "airbnb",
+      "airbnb/hooks",
       "prettier"
     ]
   },
@@ -40,9 +44,14 @@
   },
   "devDependencies": {
     "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "prettier": "2.5.1"
-  }
+  },
+  "proxy": "http://localhost:8080"
 }
