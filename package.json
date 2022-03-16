@@ -2,6 +2,12 @@
   "name": "interview",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "build:server": "cd server && yarn build",
+    "build:ui": "cd ui && yarn build",
+    "build": "yarn build:server && yarn build:ui",
+    "start": "cd server && yarn start"
+  },
   "author": "Yujen Su",
   "license": "MIT",
   "private": true,
