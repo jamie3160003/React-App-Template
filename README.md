@@ -1,17 +1,26 @@
-# Install dependencies
-yarn
+### Change Node Version
 
-# For local development
-# UI will be running on port 3000; server will be running on port 8080
-yarn dev
+```nvm use```
+<br />(You can skip this step if you are running node version 16.18)
 
-# For production
-# The app will be running on port 8080
-yarn build
-yarn start
+---
+### Install dependencies
+```yarn```
+
+---
+### For local development
+```yarn dev```
+#### UI will be running on port 3000; server will be running on port 8080
 
 
-# APIs
+---
+### For production
+#### The app will be running on port 8080
+```yarn build```
+<br />```yarn start```
+
+---
+### APIs
 1. GET /api/physicians
 This will return all the physicians
 
