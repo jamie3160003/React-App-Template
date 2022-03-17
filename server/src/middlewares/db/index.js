@@ -10,7 +10,14 @@ cache.set('physicians', [
     lastName: 'Julis',
     email: 'hibbert@notablehealth.com',
     name: 'Hibbert, Julis',
-    appointments: [],
+    appointments: [
+      {
+        id: 1,
+        name: 'John Doe',
+        time: '8:00AM',
+        kind: 'New Patient',
+      },
+    ],
   },
   {
     id: 2,
@@ -57,7 +64,14 @@ cache.set('physicians', [
     lastName: 'Nick',
     email: 'riviera@notablehealth.com',
     name: 'Riviera, Nick',
-    appointments: [],
+    appointments: [
+      {
+        id: 1,
+        name: 'Ben Archer',
+        time: '10:00AM',
+        kind: 'New Patient',
+      },
+    ],
   },
 ]);
 
