@@ -1,18 +1,14 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import routes from '../../configs/routes';
 import 'antd/dist/antd.css';
 
-const { Content, Header } = Layout;
+const { Content } = Layout;
 
 function App() {
   return (
     <Layout>
-      <Header>
-        <Link to="/">Home</Link>
-        <Link to="/page-a">PageA</Link>
-      </Header>
       <Content>
         <Routes>
           {routes.map(({ path, Component }) => (
