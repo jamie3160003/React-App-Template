@@ -9,3 +9,11 @@ yarn dev
 # The app will be running on port 8080
 yarn build
 yarn start
+
+
+# APIs
+1. GET /api/physicians
+This will return all the physicians
+
+2. GET /api/appointments?physicianId={id}
+This will return all appointments for the particular physician
