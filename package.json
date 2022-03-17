@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"npm:dev-ui\" \"npm:dev-server\"",
+    "dev-ui": "cd ui && yarn start",
+    "dev-server": "cd server && yarn dev",
     "build:server": "cd server && yarn build",
     "build:ui": "cd ui && yarn build",
     "build": "yarn build:server && yarn build:ui",
@@ -11,5 +14,11 @@
   "author": "Yujen Su",
   "license": "MIT",
   "private": true,
-  "workspaces": ["server", "ui"]
+  "workspaces": [
+    "server",
+    "ui"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
 }
