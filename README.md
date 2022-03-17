@@ -1,5 +1,6 @@
-### Change Node Version
+# Setup Guide
 
+### Change Node Version
 ```nvm use```
 <br />(You can skip this step if you are running node version 16.18)
 
@@ -15,9 +16,9 @@
 
 ---
 ### For production
-#### The app will be running on port 8080
 ```yarn build```
 <br />```yarn start```
+#### The app will be running on port 8080
 
 ---
 ### APIs
