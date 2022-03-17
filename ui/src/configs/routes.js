@@ -12,10 +12,6 @@ const routes = [
     path: '/',
     Component: getLoadable(() => import('../screens/Home')),
   },
-  {
-    path: '/page-a',
-    Component: getLoadable(() => import('../screens/PageA')),
-  },
 ];
 
 export default routes;

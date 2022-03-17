@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Menu, Layout } from 'antd';
+import { Layout } from 'antd';
 import Appointment from '../../components/Appointment';
+import Navbar from '../../components/Navbar';
 
 const { Sider, Content } = Layout;
-const { SubMenu } = Menu;
 
 function Home() {
   const [physicians, setPhysicians] = useState([]);
@@ -21,15 +21,7 @@ function Home() {
   return (
     <Layout style={{ height: '100vh' }}>
       <Sider>
-        <Menu mode="inline" defaultOpenKeys={['physicians']}>
-          <SubMenu key="physicians" title="PHYSICIANS">
-            {physicians.map((d) => (
-              <Menu.Item key={d.id} onClick={() => setSelectedPhysician(d)}>
-                {d.name}
-              </Menu.Item>
-            ))}
-          </SubMenu>
-        </Menu>
+        <Navbar physicians={physicians} setSelectedPhysician={setSelectedPhysician} />
       </Sider>
       <Content>{selectedPhysician && <Appointment physician={selectedPhysician} />}</Content>
     </Layout>

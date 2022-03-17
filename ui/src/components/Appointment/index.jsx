@@ -36,10 +36,12 @@ function Appointment({ physician }) {
   }, [physician, setAppointments]);
   return (
     <>
-      <Title>
-        Dr. {physician.firstName} {physician.lastName}
-      </Title>
-      <Title level={3}>{physician.email}</Title>
+      <div style={{ margin: '20px 40px' }}>
+        <Title>
+          Dr. {physician.firstName} {physician.lastName}
+        </Title>
+        <Title level={3}>{physician.email}</Title>
+      </div>
       <Table columns={columns} dataSource={appointments} />
     </>
   );
