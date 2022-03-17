@@ -12,6 +12,7 @@
     "koa-compose": "^4.1.0",
     "koa-router": "^10.1.1",
     "koa-static": "^5.0.0",
+    "node-cache": "^5.1.2",
     "roarr": "^7.9.0"
   },
   "devDependencies": {
