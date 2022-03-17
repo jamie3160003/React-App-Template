@@ -7,7 +7,7 @@ const { Title } = Typography;
 
 function Navbar({ physicians, setSelectedPhysician }) {
   return (
-    <Menu mode="inline" defaultOpenKeys={['physicians']}>
+    <Menu mode="inline" defaultOpenKeys={['physicians']} style={{ height: '100vh' }}>
       <Title style={{ textAlign: 'center', marginTop: 20 }}>Notable</Title>
       <SubMenu key="physicians" title="PHYSICIANS">
         {physicians.map((d) => (
